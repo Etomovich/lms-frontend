@@ -1,0 +1,20 @@
+<table mat-table [dataSource]="tableData" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Username </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="loanGiven">
+    <th mat-header-cell *matHeaderCellDef> Total Open Loans </th>
+    <td mat-cell *matCellDef="let element"> {{element.loanGiven}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="toBeCollected">
+    <th mat-header-cell *matHeaderCellDef> Uncollected Amount </th>
+    <td mat-cell *matCellDef="let element"> {{element.toBeCollected}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

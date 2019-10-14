@@ -1,0 +1,45 @@
+/* .totals-div {
+    margin-top: 30px
+} */
+
+.totals-div div {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    padding: 30px 50px;
+    border-radius: 4px;
+    color: white;
+    min-width: 60px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.officer-performance-div h2 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.total-loans-div {
+    background-color: #382ec7;
+}
+
+.outstanding-loans-div {
+    background-color: #656b2c;
+}
+
+.areas-loans-div {
+    background-color: #a8660f;
+}
+
+.side-bar {
+    display: absolute;
+}
+
+.officer-performance-div {
+    margin-top: 15px;
+}
+
+.chart-class {
+    display: block;
+    width: 85%;
+    margin-left: 60px;
+}

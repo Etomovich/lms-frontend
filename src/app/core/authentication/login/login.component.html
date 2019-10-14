@@ -1,3 +1,26 @@
 <div class="main-container">
-  <p>afdaedf</p>
+  <div fxLayout="column" fxLayoutAlign="space-around stretch" class="login-container">
+    <img src="/assets/img/tulaa_logo.png" class="logo"/>
+    <div fxLayout="row" fxLayoutAlign="space-around center" class="body-container">
+      <div class="hero-container" fxFlex="60">
+        <h1>Loan Management System(LMS)</h1>
+        <p>This is a application that allows the monitoring of loans by the company and also
+        allows our esteemed farmers to check their loan status and apply for new loans.</p>
+      </div>
+      <div class="login-form-div" fxFlex="30">
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="login()" fxLayout="column" fxLayoutAlign="center center">
+          <mat-form-field class="login-input">
+            <input matInput type="text" placeholder="Enter email" formControlName="email">
+          </mat-form-field>
+          <mat-form-field class="login-input">
+            <input matInput type="password" placeholder="Enter password" formControlName="password">
+          </mat-form-field>
+          <button mat-raised-button class="login-btn">Login</button>
+        </form>
+      </div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center center" class="footer-container">
+      <p>Project Proposal for Tulaa Company(Etomovich © 2019)</p>
+    </div>
+  </div>
 </div>
